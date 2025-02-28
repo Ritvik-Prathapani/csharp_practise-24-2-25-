@@ -169,17 +169,53 @@ namespace Practise_exam
             //Console.WriteLine("\nLogging with Timestamp & Error Categorization:");
             //errorLogger.Log("Failed to connect to database.");
 
-            //Question 
-            Console.WriteLine("Requesting Singleton Instance...");
-            ConfigurationManager config1 = ConfigurationManager.GetInstance();
-            config1.ShowConfig();
+            //Question 18
+            //Console.WriteLine("Requesting Singleton Instance...");
+            //ConfigurationManager config1 = ConfigurationManager.GetInstance();
+            //config1.ShowConfig();
 
-            Console.WriteLine("\nRequesting Singleton Instance Again...");
-            ConfigurationManager config2 = ConfigurationManager.GetInstance();
-            config2.ShowConfig();
+            //Console.WriteLine("\nRequesting Singleton Instance Again...");
+            //ConfigurationManager config2 = ConfigurationManager.GetInstance();
+            //config2.ShowConfig();
 
-            Console.WriteLine("\nAre both instances same? " + (config1 == config2));
+            //Console.WriteLine("\nAre both instances same? " + (config1 == config2));
+
+            //Question 19
+            //NotificationService service = new NotificationService();
+
+            //INotificationObserver emailNotifier = new EmailNotifier();
+            //INotificationObserver smsNotifier = new SMSNotifier();
+
+            //service.Subscribe(emailNotifier);
+            //service.Subscribe(smsNotifier);
+
+            //Console.WriteLine("Sending Notification...");
+            //service.Notify("New product launch tomorrow!");
+
+            //service.Unsubscribe(smsNotifier);
+
+            //Console.WriteLine("\nSending another Notification...");
+            //service.Notify("Flash sale starts now!");
+
+            //Question 20
+            //Console.WriteLine("Enter total amount:");
+            //double totalAmount = Convert.ToDouble(Console.ReadLine());
+
+            //Console.WriteLine("Choose Discount Type: 1 - No Discount, 2 - 10% Discount, 3 - $50 Off");
+            //int choice = Convert.ToInt32(Console.ReadLine());
+
+            //IDiscountStrategy discountStrategy = choice switch
+            //{
+            //    1 => new NoDiscount(),
+            //    2 => new PercentageDiscount(10),
+            //    3 => new FixedAmountDiscount(50),
+            //    _ => new NoDiscount()
+            //};
+
+            //ShoppingCart cart = new ShoppingCart(discountStrategy);
+            //double finalAmount = cart.CalculateTotal(totalAmount);
+
+            //Console.WriteLine($"Final Amount after Discount: ${finalAmount}");
         }
-
     }
 }
